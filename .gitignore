@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+local-results/
+baseline*.json
+.env
+.env.*
+*.docx
+*.pdf
+*.pem
+*.key

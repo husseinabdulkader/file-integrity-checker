@@ -1,0 +1,2 @@
+Fictional demonstration file for file-integrity checks.
+An approved edit is still a change; the hash does not establish intent.

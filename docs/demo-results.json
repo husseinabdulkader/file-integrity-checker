@@ -1,0 +1,77 @@
+{
+  "sample_files_preserved": true,
+  "scenarios_passed": 7,
+  "results": [
+    {
+      "case": "unchanged",
+      "exit_code": 0,
+      "report": {
+        "added": [],
+        "modified": [],
+        "removed": [],
+        "unchanged_count": 2
+      }
+    },
+    {
+      "case": "modified",
+      "exit_code": 1,
+      "report": {
+        "added": [],
+        "modified": [
+          "settings.txt"
+        ],
+        "removed": [],
+        "unchanged_count": 1
+      }
+    },
+    {
+      "case": "added",
+      "exit_code": 1,
+      "report": {
+        "added": [
+          "new.txt"
+        ],
+        "modified": [],
+        "removed": [],
+        "unchanged_count": 2
+      }
+    },
+    {
+      "case": "removed",
+      "exit_code": 1,
+      "report": {
+        "added": [],
+        "modified": [],
+        "removed": [
+          "notes.txt"
+        ],
+        "unchanged_count": 1
+      }
+    },
+    {
+      "case": "renamed",
+      "exit_code": 1,
+      "report": {
+        "added": [
+          "renamed-notes.txt"
+        ],
+        "modified": [],
+        "removed": [
+          "notes.txt"
+        ],
+        "unchanged_count": 1
+      }
+    },
+    {
+      "case": "overwrite_prevented",
+      "exit_code": 2,
+      "error_reported": true,
+      "baseline_preserved": true
+    },
+    {
+      "case": "malformed_baseline",
+      "exit_code": 2,
+      "error_reported": true
+    }
+  ]
+}

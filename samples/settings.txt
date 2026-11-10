@@ -1,0 +1,4 @@
+# Fictional demonstration settings, not a real application configuration
+application=inventory-demo
+logging=enabled
+access=standard
