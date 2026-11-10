@@ -2,7 +2,7 @@
 
 Date: 2026-11-10. Environment: Windows, Python 3.14.2. Scope: local sample files and temporary test directories.
 
-`python -m unittest discover -s tests -v` discovered 15 tests. Fourteen passed; the symbolic-link test was skipped because this account cannot create symbolic links. No Linux, hosted GitHub Actions or live operational deployment result is claimed.
+`python -m unittest discover -s tests -v` discovered 15 tests. Fourteen passed; the symbolic-link test was skipped because this account cannot create symbolic links. These are the original local results; hosted validation is recorded below. No live operational deployment is claimed.
 
 The known SHA-256 test checks the fixed `abc` test vector. The combined-change test independently expects a same-size content edit to be modified, a new path to be added and a removed path to be removed. CLI tests confirm exits 0, 1 and 2 and that attempts to overwrite a baseline leave its original bytes intact. Permission-error behaviour is tested by injecting a read failure; actual Windows ACL scenarios were not exercised.
 
@@ -30,4 +30,8 @@ On 2026-11-10, `python demo.py` completed all seven scenarios successfully. Each
 | Baseline overwrite attempted | 2 | Error reported; original baseline bytes preserved |
 | Malformed baseline | 2 | Error reported; no clean result emitted |
 
-The original sample bytes were compared before and after the demonstration and matched. A separate check of the existing `baseline.json` against `samples` returned exit 0 and unchanged_count 2. The local test suite was rerun: 14 passed, with the same one symbolic-link test skipped. Hosted CI and Linux remain unverified.
+The original sample bytes were compared before and after the demonstration and matched. A separate check of the existing `baseline.json` against `samples` returned exit 0 and unchanged_count 2. The local test suite was rerun: 14 passed, with the same one symbolic-link test skipped. Subsequent hosted validation is recorded below.
+
+## GitHub verification
+
+Published on 2026-11-10. [Workflow run 42767541989](https://github.com/husseinabdulkader/file-integrity-checker/actions/runs/42767541989) completed successfully for commit `a52906ee6e11bfaad8b92d102247a4a955472603`. Both Windows and Ubuntu jobs passed the test-suite and demonstration steps with Python 3.14. This verifies the automated checks on both hosted platforms; the original local symbolic-link skip remains documented separately. Personal baseline files were excluded from publication.

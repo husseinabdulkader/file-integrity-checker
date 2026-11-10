@@ -86,7 +86,7 @@ The demonstration creates temporary copies of the fictional samples, checks seve
 
 Local verification on 2026-11-10: 15 tests discovered, 14 passed and 1 skipped because symbolic-link creation was not permitted for the Windows account. Tests cover known hash values, same-size edits, all change categories, renames, nested/hidden/empty files, timestamp-only changes, baseline validation, read errors, exit codes and overwrite prevention. See [verification](docs/verification.md).
 
-GitHub Actions is configured for Windows and Ubuntu but has not been run. This project is currently local and has not been published.
+Published at [husseinabdulkader/file-integrity-checker](https://github.com/husseinabdulkader/file-integrity-checker). [GitHub Actions passed](https://github.com/husseinabdulkader/file-integrity-checker/actions/runs/42767541989) on Windows and Ubuntu with Python 3.14, including the test suite and all seven demonstration scenarios.
 
 ## Scope and limitations
 
